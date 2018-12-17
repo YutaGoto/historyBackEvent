@@ -1,0 +1,91 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    bottom: 140px;
+    left: 0;
+}
+
+.modal.show {
+    animation: fanpModalFadeIn 1s
+}
+
+.modal-overLay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998
+}
+
+.modal .modal-content {
+    font-family: \"Helvetica Neue\", Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 480px;
+    font-size: 16px;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.7));
+}
+
+.modal .modal-content .modal-title {
+    margin: 5px
+}
+
+.modal .modal-content .modal-title img {
+    height: 48px;
+}
+
+.modal .modal-content .modal-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #000;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: auto;
+    text-align: center;
+    text-indent: 0
+}
+
+.modal .modal-content .modal-main {
+    font-size: 21px;
+    margin: auto;
+    color: #cccccc; /* co */
+}
+
+.modal .modal-content .modal-link {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #cccccc; /* co */
+    margin-bottom: 0
+}
+
+.modal .modal-content .modal-link a {
+    color: #fff;
+    text-decoration: none
+}
+
+.hide {
+    opacity: 0
+}
+
+@keyframes fanpModalFadeIn {
+    from {
+        opacity: 0;
+        bottom: 100px;
+    }
+    to {
+        opacity: 1;
+        bottom: 140px;
+    }
+}
